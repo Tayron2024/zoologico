@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Animales</title>
+</head>
+<body>
+    <h1>Búsqueda de Animales</h1>
+    <form method="get" action="{% url 'buscar_animales' %}">
+        <input type="text" name="q" placeholder="Buscar animal por nombre" value="{{ query }}">
+        <button type="submit">Buscar</button>
+    </form>
+
+    {% if query %}
+        <h2>Resultados para: "{{ query }}"</h2>
+        {% if resultados %}
+            <ul>
+                {% for animal in resultados %}
+                    <li>
+                        <strong>{{ animal.nombre }}</strong> - Edad: {{ animal.edad }} - Especie: {{ animal.especie.nombre_comun }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No se encontraron resultados.</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
