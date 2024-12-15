@@ -1,2 +1,4 @@
-# zoologico
-![image](https://github.com/user-attachments/assets/96abfd6a-c4d2-4195-ad3c-c68593f565ea)
+## Zoologico
+![image](https://github.com/user-attachments/assets/ad53756f-fef6-4134-b6b2-ce9db00c7e08)
+
+![image](https://github.com/user-attachments/assets/cb1520d8-37bc-40f2-afd7-dc6b151a4e1c)
