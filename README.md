@@ -1,4 +1,4 @@
-## Zoológico Django App 
+# Zoológico Django App 
 Este proyecto implementa un sistema de gestión para un zoológico utilizando Django, que permite manejar Animales, su Historial de Alimentación, y otros modelos relacionados.
 Se han desarrollado funcionalidades de filtros, búsqueda, presentación de datos, y formularios con relaciones Padre-Hijos.
 
@@ -15,7 +15,7 @@ Se pueden filtrar animales por nombre y especie.
 Funcionalidad implementada en la vista basada en clase (ListView).
 Presentación de Datos
 
-# Datos presentados en una tabla HTML con columnas personalizadas:
+## Datos presentados en una tabla HTML con columnas personalizadas:
 Nombre, especie, género, y edad de los animales.
 Implementación de paginación para mejor navegación.
 Relación Padre-Hijos
@@ -29,12 +29,19 @@ Copiar código
 ZoologicoPractica/
 │
 ├── Zoologico/                 # Aplicación principal
+
 │   ├── models.py              # Modelos (Animal, HistorialAlimentacion, Persona, etc.)
+
 │   ├── forms.py               # Formularios personalizados
+
 │   ├── views.py               # Vistas para CRUD y lógica de negocio
+
 │   ├── urls.py                # Rutas de la aplicación
+
 │   └── templates/             # Templates HTML
+
 │       ├── animal_list.html   # Lista de animales con filtros y búsqueda
+
 │       └── animal_create.html # Formulario de registro padre-hijos
 │
 └── manage.py                 # Comando para ejecutar el servidor
