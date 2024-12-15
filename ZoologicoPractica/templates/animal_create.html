@@ -1,0 +1,10 @@
+<h2>Registrar Animal y Historial de Alimentación</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ animal_form.as_p }}
+    {{ historial_formset.management_form }}
+    {% for form in historial_formset %}
+        {{ form.as_p }}
+    {% endfor %}
+    <button type="submit">Guardar</button>
+</form>
